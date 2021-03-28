@@ -1,0 +1,7 @@
+{
+  "name": "my-leetcode",
+  "license": "MIT",
+  "scripts": {
+    "test": "node platground.js"
+  }
+}
