@@ -1,1 +1,1 @@
-LeetCode
+This repository contains my answers for tasks in LeetCode project
