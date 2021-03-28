@@ -9,9 +9,9 @@ const printQuestion = (question) => {
     })
 }
 
-export default (question, expected) => {
-    const jsonResult = JSON.stringify(question.answer);
-    const jsonExpected = JSON.stringify(expected);
+export default (question, currentAnswer) => {
+    const jsonResult = JSON.stringify(currentAnswer);
+    const jsonExpected = JSON.stringify(question.answer);
 
     if (jsonResult != jsonExpected) {
         printQuestion(question);
