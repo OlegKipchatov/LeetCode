@@ -1,5 +1,5 @@
 {
-  "name": "my-leetcode",
+  "name": "leetcode",
   "license": "MIT",
   "scripts": {
     "test": "node platground.js"
