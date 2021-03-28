@@ -9,7 +9,7 @@ const printQuestion = (question) => {
     })
 }
 
-const checkAnswer = (question, expected) => {
+export default (question, expected) => {
     const jsonResult = JSON.stringify(question.answer);
     const jsonExpected = JSON.stringify(expected);
 
@@ -17,8 +17,4 @@ const checkAnswer = (question, expected) => {
         printQuestion(question);
         throw new Error(`You answer: ${jsonResult}\nTrue answer: ${jsonExpected}`);
     }
-}
-
-module.exports = {
-    checkAnswer
 }

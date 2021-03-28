@@ -4,7 +4,7 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 */
 
-const { checkAnswer } = require('../utils');
+import CheckAnswer from '../utils/check-answer';
 
 var questions = [{
         nums: [2, 7, 11, 15],
@@ -72,13 +72,9 @@ const twoSum = function(nums, target) {
     throw new Error('This array no hase two sum solution');
 };
 
-const runAlghoritm = () => {
+export default () => {
     questions.forEach(question => {
         const answer = twoSum(question.nums, question.target);
-        checkAnswer(question, answer);
+        CheckAnswer(question, answer);
     });
-}
-
-module.exports = {
-    runAlghoritm
 }
