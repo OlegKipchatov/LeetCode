@@ -4,17 +4,20 @@ You may assume that each input would have exactly one solution, and you may not 
 You can return the answer in any order.
 */
 
-const { printQuestion } = require('../utils');
+const { checkAnswer } = require('../utils');
 
 var questions = [{
         nums: [2, 7, 11, 15],
-        target: 9
+        target: 9,
+        answer: [0, 1]
     }, {
         nums: [0, 4, 3, 0],
-        target: 0
+        target: 0,
+        answer: [0, 3]
     }, {
         nums: [-3, 4, 3, 90],
-        target: 0
+        target: 0,
+        answer: [0, 2]
     }
 ];
 
@@ -71,12 +74,8 @@ const twoSum = function(nums, target) {
 
 const runAlghoritm = () => {
     questions.forEach(question => {
-        printQuestion(question);
-    
         const answer = twoSum(question.nums, question.target);
-        
-        console.log(answer);
-        console.log('--------------------------------');
+        checkAnswer(question, answer);
     });
 }
 
