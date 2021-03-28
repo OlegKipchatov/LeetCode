@@ -2,6 +2,6 @@
   "name": "leetcode",
   "license": "MIT",
   "scripts": {
-    "test": "node platground.js"
+    "test": "node playground.js"
   }
 }
